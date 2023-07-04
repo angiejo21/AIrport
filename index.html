@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-state="wizard">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- Space Grotesk Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700"
+      rel="stylesheet"
+    />
+    <title>AIrport</title>
+  </head>
+  <body>
+    <header>
+      <h1>AIrport</h1>
+      <p>Pianifica con GPT il tuo weekend</p>
+    </header>
+    <main>
+      <div class="container">
+        <section class="wizard">
+          <div class="user-data">
+            <form action="">
+              <label class="label-text" name="location"
+                >Dove vuoi andare?</label
+              >
+              <input
+                class="field"
+                type="text"
+                placeholder="Inserisci una destinazione"
+                required
+              />
+              <label class="label-text">In quale stagione vuoi andare?</label>
+              <fieldset class="field field-group">
+                <label>
+                  <input
+                    type="radio"
+                    name="season"
+                    value="primavera"
+                    required
+                  />
+                  🌸 Primavera
+                </label>
+                <label>
+                  <input type="radio" name="season" value="estate" required />
+                  ☀️ Estate
+                </label>
+                <label>
+                  <input type="radio" name="season" value="autunno" required />
+                  🍂 Autunno
+                </label>
+                <label>
+                  <input type="radio" name="season" value="inverno" required />
+                  ❄️ Inverno
+                </label>
+              </fieldset>
+              <label class="label-text">Con chi vai?</label>
+              <select name="company" class="field" required>
+                <option value="" disabled selected>Scegli la compagnia</option>
+                <option value="da solo">da solo</option>
+                <option value="con amici">con amici</option>
+                <option value="con partner">con partner</option>
+              </select>
+              <button class="btn">Crea itinerario</button>
+            </form>
+          </div>
+        </section>
+        <section class="travel">
+          <div class="travel-head">
+            <div class="travel-title">
+              <div class="travel-name">Il tuo viaggio a <b>ROMA</b></div>
+              <div class="travel-detail">
+                in <b>ESTATE</b>, <b>CON AMICI</b>
+              </div>
+            </div>
+            <div class="travel-image">
+              <!-- <img src="https://unsplash.it/512" alt="immagine viaggio" /> -->
+            </div>
+          </div>
+          <div class="travel-content">
+            <div class="travel-plan">
+              <div class="cards">
+                <div class="card">
+                  <p class="card-day">Giorno 1</p>
+                  <h3 class="card-title">Mangia e bevi da romano</h3>
+                  <p>
+                    <b>Luoghi: </b>Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Ducimus, dolorem?
+                  </p>
+                </div>
+                <div class="card">
+                  <p class="card-day">Giorno 1</p>
+                  <h3 class="card-title">Mangia e bevi da romano</h3>
+                  <p>
+                    <b>Luoghi: </b>Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Ducimus, dolorem?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="travel-map">
+              <div id="map">MAP</div>
+            </div>
+          </div>
+        </section>
+        <section class="loading">
+          <img src="/assets/img/loader.gif" alt="loading" />
+        </section>
+      </div>
+    </main>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
