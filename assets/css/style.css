@@ -138,6 +138,10 @@ header h1 {
   background-color: violet;
   border-radius: 24px;
   height: 400px;
+  overflow: hidden;
+}
+#map {
+  height: 100%;
 }
 /* CARD */
 .cards > * {
@@ -148,7 +152,8 @@ header h1 {
   background-color: #92ebf1;
   border-radius: 24px;
 }
-.card:hover {
+.card:hover,
+.card.hover {
   transform: scale(1.05);
   transition: transform 0.2s ease-in-out;
 }

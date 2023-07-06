@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <!--Style TomTom-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.18.0/maps/maps.css"
+    />
     <!-- Space Grotesk Font -->
     <link
       href="https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700"
@@ -21,13 +27,12 @@
         <section class="wizard">
           <div class="user-data">
             <form action="">
-              <label class="label-text" name="location"
-                >Dove vuoi andare?</label
-              >
+              <label class="label-text">Dove vuoi andare?</label>
               <input
                 class="field"
                 type="text"
                 placeholder="Inserisci una destinazione"
+                name="location"
                 required
               />
               <label class="label-text">In quale stagione vuoi andare?</label>
@@ -80,22 +85,24 @@
           <div class="travel-content">
             <div class="travel-plan">
               <div class="cards">
-                <div class="card">
-                  <p class="card-day">Giorno 1</p>
-                  <h3 class="card-title">Mangia e bevi da romano</h3>
-                  <p>
-                    <b>Luoghi: </b>Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Ducimus, dolorem?
-                  </p>
-                </div>
-                <div class="card">
-                  <p class="card-day">Giorno 1</p>
-                  <h3 class="card-title">Mangia e bevi da romano</h3>
-                  <p>
-                    <b>Luoghi: </b>Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Ducimus, dolorem?
-                  </p>
-                </div>
+                <template>
+                  <div class="card">
+                    <p class="card-day">Giorno 1</p>
+                    <h3 class="card-title">Mangia e bevi da romano</h3>
+                    <div class="card-content">
+                      <p>
+                        <b>Luoghi: </b>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Ducimus, dolorem?
+                      </p>
+                      <p>
+                        <b>Curiosità: </b>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Ducimus, dolorem?
+                      </p>
+                    </div>
+                  </div>
+                </template>
               </div>
             </div>
             <div class="travel-map">
@@ -108,6 +115,7 @@
         </section>
       </div>
     </main>
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.18.0/maps/maps-web.min.js"></script>
     <script src="/assets/js/main.js"></script>
   </body>
 </html>
